@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e3edf7;
+}
+.main-container{
+    margin:0 auto;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.icon{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 8px;
+    transition: transform 0.5s;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255, 0.7);
+}
+.icon:last-child{
+    margin-right: 0;
+}
+.icon i{
+    font-size: 35px;
+    color:rgb(137, 136, 134);
+    transition: transform 0.5s;
+}
+.icon:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255, 0.7),
+    -0.5px -0.5px 0px rgba(255,255,255,1),
+    0.5px 0.5px 0px rgba(0,0,0,.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05) ;
+    transform: translateY(2px);
+}
+.icon:hover i{
+    color: green;
+    transform: scale(0.9);
+}
